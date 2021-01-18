@@ -6,7 +6,7 @@
 /*   By: avuorio <avuorio@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/07 11:55:37 by avuorio       #+#    #+#                 */
-/*   Updated: 2021/01/14 14:18:05 by avuorio       ########   odam.nl         */
+/*   Updated: 2021/01/18 10:41:26 by avuorio       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,17 @@ void	check_flags(char *format, va_list ap, t_data *s)
 {
 	if (format[s->index] == '*')
 	{
-		if (s->prec_parse)
+		if (s->prec)
 			s->prec_w = va_arg(ap, int);
 		else
 			s->width = va_arg(ap, int);
 	}
-	if (format[s->index] == '0' && !s->minus && !s->prec_parse)
+	if (format[s->index] == '0' && !s->minus && !s->prec)
 		s->zero = 1;
-	if (format[s->index] > '0' && format[s->index] <= '9' && !s->prec_parse)
+	if (format[s->index] > '0' && format[s->index] <= '9' && !s->prec)
 		s->width = atoi_printf(format, &s->index);
-	if (format[s->index] >= '0' && format[s->index] <= '9' && s->prec_parse)
+	if (format[s->index] >= '0' && format[s->index] <= '9' && s->prec)
 		s->prec_w = atoi_printf(format, &s->index);
-	s->prec_parse = 0;
 	if (format[s->index] == '-')
 	{
 		s->zero = 0;

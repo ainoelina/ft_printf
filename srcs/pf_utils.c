@@ -6,7 +6,7 @@
 /*   By: avuorio <avuorio@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/08 11:51:53 by avuorio       #+#    #+#                 */
-/*   Updated: 2021/01/13 10:46:37 by avuorio       ########   odam.nl         */
+/*   Updated: 2021/01/18 10:41:39 by avuorio       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	initialise_struct(t_data *s)
 	s->ret = 0;
 	s->width = 0;
 	s->prec = 0;
-	s->prec_parse = 0;
 	s->prec_w = 0;
 	s->conversion = 0;
 	s->minus = 0;
@@ -37,7 +36,6 @@ void	initialise_struct(t_data *s)
 void	set_precision(t_data *s)
 {
 	s->prec = 1;
-	s->prec_parse = 1;
 	s->prec_w = 0;
 }
 
@@ -50,7 +48,6 @@ void	flags_reset(t_data *s)
 {
 	s->width = 0;
 	s->prec = 0;
-	s->prec_parse = 0;
 	s->prec_w = 0;
 	s->conversion = 0;
 	s->minus = 0;

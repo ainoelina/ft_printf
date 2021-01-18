@@ -6,7 +6,7 @@
 /*   By: avuorio <avuorio@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/07 11:40:56 by avuorio       #+#    #+#                 */
-/*   Updated: 2021/01/13 13:45:19 by avuorio       ########   odam.nl         */
+/*   Updated: 2021/01/18 10:42:13 by avuorio       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ typedef struct	s_data
 	int					width;
 	int					prec;
 	int					prec_w;
-	int					prec_parse;
 	int					conversion;
 	int					minus;
 	int					zero;
