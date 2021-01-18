@@ -6,7 +6,7 @@
 #    By: avuorio <avuorio@student.codam.nl>           +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/01/07 11:28:19 by avuorio       #+#    #+#                  #
-#    Updated: 2021/01/13 13:54:37 by avuorio       ########   odam.nl          #
+#    Updated: 2021/01/18 12:28:56 by avuorio       ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,6 @@ bonus:			${NAME}
 
 %.o: %.c
 				@${CC} ${CFLAGS} -I ${HEADER} -o $@ -c $<
-				
 
 clean:
 				@${RM} ${OBJS}
