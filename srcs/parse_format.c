@@ -6,7 +6,7 @@
 /*   By: avuorio <avuorio@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/07 11:55:37 by avuorio       #+#    #+#                 */
-/*   Updated: 2021/01/18 10:41:26 by avuorio       ########   odam.nl         */
+/*   Updated: 2021/01/18 13:56:58 by avuorio       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,8 @@ void	check_flags(char *format, va_list ap, t_data *s)
 }
 
 /*
-** processes the format string by checking if there are any flags.
+** processes the format string by checking if there are any flags
+** and setting the struct flag variables to correct values.
 ** also deals with undefined behaviour by returning a zero.
 */
 

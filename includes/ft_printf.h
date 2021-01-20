@@ -6,7 +6,7 @@
 /*   By: avuorio <avuorio@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/07 11:40:56 by avuorio       #+#    #+#                 */
-/*   Updated: 2021/01/18 10:42:13 by avuorio       ########   odam.nl         */
+/*   Updated: 2021/01/18 12:35:55 by avuorio       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 ** ~~~~~~~~~ HEADERS ~~~
 */
 
-# include "../libft/libft.h"
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
@@ -105,6 +104,16 @@ char			*prec_num(char *str, t_data *s);
 int				atoi_printf(char *format, int *index);
 int				integer_len(long long n);
 int				uinteger_len(unsigned long long n);
+
+/*
+** ~~~~~~~~~ LIBFT FUNCTIONS ~~~
+*/
+
+size_t			ft_strlen(const char *s);
+
+void			*ft_calloc(size_t count, size_t size);
+
+char			*ft_strdup(const char *s1);
 
 /*
 ** ~~~~~~~~~ CREATE OUTPUT ~~~

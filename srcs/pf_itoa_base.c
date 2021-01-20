@@ -6,15 +6,11 @@
 /*   By: avuorio <avuorio@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/08 10:15:13 by avuorio       #+#    #+#                 */
-/*   Updated: 2021/01/13 13:41:02 by avuorio       ########   odam.nl         */
+/*   Updated: 2021/01/18 13:57:09 by avuorio       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-/*
-** !!! find out why len starts at 1 and not 0
-*/
 
 size_t	ft_intlen_base(unsigned long long n, char *base)
 {

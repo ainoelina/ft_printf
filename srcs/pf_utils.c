@@ -6,7 +6,7 @@
 /*   By: avuorio <avuorio@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/08 11:51:53 by avuorio       #+#    #+#                 */
-/*   Updated: 2021/01/18 10:41:39 by avuorio       ########   odam.nl         */
+/*   Updated: 2021/01/18 13:57:25 by avuorio       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,6 @@ void	set_precision(t_data *s)
 	s->prec = 1;
 	s->prec_w = 0;
 }
-
-/*
-** resets the flags in case since the format string
-** might have several conversion specifiers
-*/
 
 void	flags_reset(t_data *s)
 {

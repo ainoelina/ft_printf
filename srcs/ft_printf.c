@@ -6,7 +6,7 @@
 /*   By: avuorio <avuorio@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/07 11:40:09 by avuorio       #+#    #+#                 */
-/*   Updated: 2021/01/14 11:34:42 by avuorio       ########   odam.nl         */
+/*   Updated: 2021/01/18 13:55:55 by avuorio       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	printing(t_data *s, char *format)
 ** the ft_printf initialises the struct to zero, and takes the format
 ** as the start of the variadic argument.
 ** it loops through the format string and if it detects '%' if either breaks
-** or checks if the next character is a type of flag or conversion specifirer.
+** or checks if the next character is a type of flag or conversion specifier.
 ** if this is true, it calls the parser function with the format string,
 ** ap and struct. If '%' character is not encountered, 'printing'
 ** function is called, that saves the characters to struct.buffer.
