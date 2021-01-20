@@ -1,6 +1,6 @@
 # ft_printf
 
-The project implements libc function printf.
+The project implements libc function printf.\n
 Works with following conversions: cspdiuxX%
 Manages following flags: -0.* and minimum field width.
 Bonuspart: handles flags "# +".
