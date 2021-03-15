@@ -1,7 +1,14 @@
 # ft_printf
 
-The project implements libc function printf.\
-Works with following conversions: cspdiuxX%\
-Manages following flags: -0.* and minimum field width.\
-Bonuspart: handles flags "# +".\
-Passed with 103/100.
+The goal of the project was to rewrite libc function printf.
+
+## Usage
+
+```c
+int   ft_printf(const char *format, ...)
+```
+ft_printf works with:<br>
+* Conversions: ``c`` ``s`` ``p`` ``d`` ``i`` ``u`` ``x`` ``X`` ``%`` ``n``
+* Flags: ``space`` ``#`` ``+`` ``0`` ``*`` ``-``
+* Minimum width
+* Precision ``.``
